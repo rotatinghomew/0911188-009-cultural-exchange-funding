@@ -1,0 +1,61 @@
+{
+  "definition": {
+    "name": "文化交流项目年度概览",
+    "subject": "活动参与",
+    "table": "participation",
+    "group": "project",
+    "measure": "attendees"
+  },
+  "tables": {
+    "events": [
+      {
+        "event_id": "ev1",
+        "project": "youth-dialogue",
+        "year": 2025,
+        "status": "held"
+      },
+      {
+        "event_id": "ev2",
+        "project": "youth-dialogue",
+        "year": 2026,
+        "status": "held"
+      },
+      {
+        "event_id": "ev3",
+        "project": "music-bridge",
+        "year": 2026,
+        "status": "cancelled"
+      }
+    ],
+    "budgets": [
+      {
+        "budget_id": "b1",
+        "project": "youth-dialogue",
+        "year": 2025,
+        "amount": 18000
+      },
+      {
+        "budget_id": "b2",
+        "project": "youth-dialogue",
+        "year": 2026,
+        "amount": 22000
+      }
+    ],
+    "participation": [
+      {
+        "record_id": "r1",
+        "event_id": "ev1",
+        "project": "youth-dialogue",
+        "attendees": 35,
+        "mode": "in-person"
+      },
+      {
+        "record_id": "r2",
+        "event_id": "ev2",
+        "project": "youth-dialogue",
+        "attendees": 28,
+        "mode": "online"
+      }
+    ]
+  }
+}
