@@ -1,0 +1,88 @@
+{
+  "project": "dialogue",
+  "checkpoints": [
+    {
+      "id": "spring",
+      "date": "2026-06-15",
+      "expected": {
+        "exchange": 8,
+        "workshop": 12
+      },
+      "amount": 50000,
+      "first_day": "2026-04-01"
+    },
+    {
+      "id": "autumn",
+      "date": "2026-10-15",
+      "expected": {
+        "exchange": 10,
+        "workshop": 9
+      },
+      "amount": 65000,
+      "first_day": "2026-06-16"
+    }
+  ],
+  "activities": [
+    {
+      "id": "a1",
+      "day": "2026-05-19",
+      "scope": "exchange",
+      "state": "held"
+    },
+    {
+      "id": "a2",
+      "day": "2026-06-08",
+      "scope": "workshop",
+      "state": "held"
+    },
+    {
+      "id": "a3",
+      "day": "2026-06-16",
+      "scope": "workshop",
+      "state": "planned"
+    }
+  ],
+  "proofs": [
+    {
+      "id": "p1",
+      "activity": "a1",
+      "received": "2026-06-02",
+      "people": 9,
+      "state": "accepted",
+      "supersedes": null
+    },
+    {
+      "id": "p2",
+      "activity": "a2",
+      "received": "2026-06-12",
+      "people": 10,
+      "state": "accepted",
+      "supersedes": null
+    },
+    {
+      "id": "p3",
+      "activity": "a2",
+      "received": "2026-06-20",
+      "people": 13,
+      "state": "accepted",
+      "supersedes": "p2"
+    }
+  ],
+  "amendments": [
+    {
+      "id": "m1",
+      "approved": "2026-06-18",
+      "activity": "a3",
+      "move_to": "exchange",
+      "state": "approved"
+    }
+  ],
+  "payments": [
+    {
+      "id": "l1",
+      "checkpoint": "spring",
+      "amount": 50000,
+      "state": "issued"
+    }
+  ]
+}
